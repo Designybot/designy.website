@@ -8,9 +8,9 @@ body {
   overflow-x: hidden;
 }
 
-* {
-  border: 1px solid red; /* Add this for debugging purposes */
-}
+/* * {
+  border: 1px solid red;
+} */
 
 *,
 *::before,
