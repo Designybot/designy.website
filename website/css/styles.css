@@ -7,6 +7,27 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+* {
+  border: 1px solid red; /* Add this for debugging purposes */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box {
+  padding: 15px; /* Adjust as needed */
+  margin: 0;
+  max-width: 100%;
+}
+
+#featurebox {
+  min-width: 200px;
+}
+
 /* sup*/
 
 body {
