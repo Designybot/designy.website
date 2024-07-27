@@ -1,0 +1,125 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #232b2b;
+  display: flex;
+  flex-direction: column;
+}
+
+.container,
+.row,
+.col-md-4,
+.box {
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+header {
+  background-color: #232b2b;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .btn-primary {
+  background-color: grey !important;
+  border: none !important;
+}
+
+header .btn-primary:hover {
+  background-color: #ffffff !important;
+  color: #232b2b !important;
+  transform: scale(1.08);
+}
+
+main {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #232b2b;
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+
+a {
+  color: #ffffff !important;
+}
+
+a:active,
+a:hover {
+  color: #ffffff !important;
+}
+
+main .btn-primary:hover {
+  background-color: green !important;
+  border: green;
+  color: #ffffff !important;
+  transform: scale(1.08);
+}
+
+#flashing-text,
+#static-text {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 4rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+#static-text {
+  background-image: linear-gradient(
+    270deg,
+    #57f287 0.08%,
+    #059669 49%,
+    #22d3ee 100.08%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#cursor {
+  display: inline-block;
+  width: 2px;
+  height: 4rem;
+  background-color: #ffffff;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+footer {
+  background-color: #232b2b;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.link-spacing {
+  margin: 5px 0;
+}
