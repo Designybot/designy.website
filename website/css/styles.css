@@ -8,6 +8,15 @@ body {
   overflow-x: hidden;
 }
 
+.full-width-line {
+  border-top: 2px solid #353535; /* Change the color and thickness of the line as needed */
+  margin: 1px 0; /* Adjust the margin as needed */
+  width: 100vw; /* Viewport width */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* * {
   border: 1px solid red;
 } */
@@ -22,6 +31,18 @@ body {
   padding: 15px; /* Adjust as needed */
   margin: 0;
   max-width: 100%;
+}
+
+.text-clip {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2; /* Adjust as needed to control line height */
 }
 
 #featurebox {
@@ -63,7 +84,6 @@ header .btn-primary:hover {
 
 main {
   padding: 20px 0;
-  text-align: center;
   background-color: #232b2b;
   color: #ffffff;
   padding-bottom: 1rem;
@@ -76,6 +96,7 @@ a {
 a:active,
 a:hover {
   color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 main .btn-primary:hover {
@@ -119,7 +140,7 @@ main .btn-primary:hover {
   height: 4rem;
   background-color: #ffffff;
   vertical-align: middle;
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
   margin-right: 0.5rem;
 }
 

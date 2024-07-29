@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bug Report - Designy</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center" style="max-width: 50rem; margin: 0 auto">
+              <h1>Report a Bug</h1>
+              <p>
+                If you have found a bug, please report it to us so we can fix it
+                as soon as possible.
+              </p>
+              <form action="submit.php" method="post">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="form-group \begin{pre}">
+                  <label for="description">Description</label>
+                  <textarea
+                    class="form-control"
+                    id="description"
+                    name="description"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
